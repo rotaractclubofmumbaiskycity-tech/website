@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RCMSKC Blogs</title>
+    <style>
+        :root {
+            --primary-color: #007bff;
+            --primary-gradient: linear-gradient(90deg, var(--primary-color), #00c424);
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background: #f0f4f8;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background: var(--primary-gradient);
+            color: white;
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 40px auto;
+        }
+
+        .blog-card {
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+            margin-bottom: 25px;
+            padding: 25px;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .blog-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 12px 25px rgba(0, 0, 0, 0.2);
+        }
+
+        .blog-images {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 15px;
+        }
+
+        .blog-images img {
+            width: 100%;
+            max-width: calc(50% - 5px);
+            border-radius: 10px;
+            object-fit: cover;
+            height: 150px;
+        }
+
+        .blog-title {
+            font-size: 1.6rem;
+            margin-bottom: 5px;
+            color: #333;
+        }
+
+        .blog-date {
+            font-size: 0.95rem;
+            color: #555;
+            margin-bottom: 12px;
+        }
+
+        .blog-short {
+            font-size: 0.95rem;
+            color: #333;
+            margin-bottom: 12px;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            background: var(--primary-color);
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background 0.3s;
+        }
+
+        .btn:hover {
+            background: #0056b3;
+        }
+
+        @media (max-width: 768px) {
+            .blog-card {
+                padding: 20px;
+            }
+
+            .blog-title {
+                font-size: 1.4rem;
+            }
+
+            .blog-images {
+                flex-direction: column;
+            }
+
+            .blog-images img {
+                max-width: 100%;
+                height: 200px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>RCMSKC Blogs</h1>
+    </header>
+
+    <div class="container" id="blogs-container"></div>
+
+    <script>
+        const blogs = [
+            {
+                title: "Suno -Sound Unlocked for needy one",
+                date: "26th January",
+                shortDescription: "A summary of our CSR initiative to provide hearing aids to the community.",
+                images: ["https://via.placeholder.com/300x150", "https://via.placeholder.com/300x150"],
+                url: "/blogs/hearing-aid-donation.html"
+            },
+            {
+                title: "Rakhi Celebration with Firefighters",
+                date: "August 9, 2025",
+                shortDescription: "Celebrating rakhi with firefighters",
+                images: ["https://via.placeholder.com/300x150", "https://via.placeholder.com/300x150"],
+                url: "/blogs/world-tourism-day.html"
+            },
+            {
+                title: "Pragati- The Modernization of School",
+                date: "March 10, 2023",
+                shortDescription: "Modernization of Pragati school ,Dahanu School",
+                images: ["https://via.placeholder.com/300x150", "https://via.placeholder.com/300x150"],
+                url: "/blogs/clean-up-drive.html"
+            }
+        ];
+
+        const container = document.getElementById("blogs-container");
+
+        function displayBlogs() {
+            blogs.forEach(blog => {
+                const card = document.createElement("div");
+                card.className = "blog-card";
+
+                let imageHTML = '<div class="blog-images">';
+                blog.images.forEach(img => {
+                    imageHTML += `<img src="${img}" alt="${blog.title} image">`;
+                });
+                imageHTML += '</div>';
+                //  ${imageHTML}
+                card.innerHTML = `
+              
+                <div class="blog-title">${blog.title}</div>
+                <div class="blog-date">${blog.date}</div>
+                <div class="blog-short">${blog.shortDescription}</div>
+              
+            `;
+
+                container.appendChild(card);
+            });
+            //   <a href="${blog.url}" class="btn">Read Full Blog</a>
+        }
+
+        displayBlogs();
+    </script>
+
+</body>
+
+</html>

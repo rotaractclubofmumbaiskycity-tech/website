@@ -1,0 +1,330 @@
+<!-- Updated Achievements Section with smaller timeline bullets -->
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>RCMSKC — Achievements</title>
+    <style>
+        :root {
+            --accent: #0057b7;
+            --muted: #6b7280;
+            --card-bg: #ffffff;
+            --glass: rgba(255, 255, 255, 0.6);
+            font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+        }
+
+        body {
+            margin: 0;
+            background: linear-gradient(180deg, #f6f9ff, #ffffff);
+            color: #111827
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 40px auto;
+            padding: 20px
+        }
+
+        .section-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 18px
+        }
+
+        .section-header h2 {
+            margin: 0;
+            font-size: 1.5rem
+        }
+
+        .section-header p {
+            margin: 0;
+            color: var(--muted)
+        }
+
+        .stats {
+            display: flex;
+            gap: 12px;
+            flex-wrap: wrap
+        }
+
+        .stat-card {
+            flex: 1 1 200px;
+            background: var(--card-bg);
+            padding: 18px;
+            border-radius: 12px;
+            box-shadow: 0 6px 18px rgba(16, 24, 40, 0.06);
+            display: flex;
+            align-items: center;
+            gap: 12px
+        }
+
+        .stat-icon {
+            width: 52px;
+            height: 52px;
+            border-radius: 10px;
+            background: var(--glass);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 700;
+            color: var(--accent);
+            font-size: 1.1rem
+        }
+
+        .stat-body {
+            line-height: 1
+        }
+
+        .stat-body .num {
+            font-size: 1.4rem;
+            font-weight: 700
+        }
+
+        .stat-body .label {
+            color: var(--muted);
+            font-size: 0.9rem
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 16px;
+            margin-top: 22px
+        }
+
+        .card {
+            background: linear-gradient(180deg, rgba(255, 255, 255, 0.9), var(--card-bg));
+            padding: 16px;
+            border-radius: 12px;
+            box-shadow: 0 8px 24px rgba(16, 24, 40, 0.06);
+        }
+
+        .card h3 {
+            margin: 0 0 8px 0;
+            font-size: 1.05rem
+        }
+
+        .card p {
+            margin: 0;
+            color: var(--muted);
+            font-size: 0.95rem
+        }
+
+        .chip {
+            display: inline-block;
+            margin-top: 12px;
+            padding: 6px 10px;
+            border-radius: 999px;
+            background: #eef2ff;
+            color: var(--accent);
+            font-weight: 600;
+            font-size: 0.8rem
+        }
+
+        /* timeline */
+        .timeline {
+            margin-top: 28px;
+            border-left: 2px dashed rgba(0, 87, 183, 0.2);
+            padding-left: 14px
+        }
+
+        .timeline-item {
+            position: relative;
+            margin-bottom: 18px
+        }
+
+        .timeline-item::before {
+            content: "";
+            position: absolute;
+            left: -9px;
+            top: 6px;
+            width: 5px;
+            height: 5px;
+            border-radius: 50%;
+            background: var(--card-bg);
+            border: 2px solid var(--accent)
+        }
+
+        .timeline-item .when {
+            font-size: 0.85rem;
+            color: var(--muted)
+        }
+
+        .timeline-item h4 {
+            margin: 4px 0 6px 0
+        }
+
+        .filters {
+            display: flex;
+            gap: 8px;
+            flex-wrap: wrap;
+            margin-top: 12px
+        }
+
+        .btn {
+            border: 1px solid rgba(0, 0, 0, 0.06);
+            padding: 8px 12px;
+            border-radius: 10px;
+            background: transparent;
+            cursor: pointer
+        }
+
+        .btn.active {
+            background: var(--accent);
+            color: #fff;
+            border-color: transparent
+        }
+
+        @media (max-width:520px) {
+            .section-header {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 8px
+            }
+
+            .stat-card {
+                padding: 14px
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <section class="container" id="achievements">
+        <div class="section-header">
+            <div>
+                <h2>Our Achievements</h2>
+                <p>Proud milestones of Rotaract Club of Mumbai Sky City (RCMSKC) — RID 3141</p>
+            </div>
+            <div>
+                <div class="filters" role="tablist" aria-label="Achievement filters">
+                    <button class="btn active" data-filter="all">All</button>
+                    <button class="btn" data-filter="community">Community</button>
+                    <button class="btn" data-filter="collab">Collaborations</button>
+                    <button class="btn" data-filter="awards">Awards</button>
+                    <button class="btn" data-filter="events">Events</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="stats" aria-hidden="false">
+            <div class="stat-card">
+                <div class="stat-icon">⭐</div>
+                <div class="stat-body">
+                    <div class="num" data-target="10">0</div>
+                    <div class="label">Top District Ranking</div>
+                </div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-icon">🤝</div>
+                <div class="stat-body">
+                    <div class="num" data-target="45">0</div>
+                    <div class="label">Collaborations</div>
+                </div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-icon">📅</div>
+                <div class="stat-body">
+                    <div class="num" data-target="120">0</div>
+                    <div class="label">Events Organized</div>
+                </div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-icon">🙋‍♀️</div>
+                <div class="stat-body">
+                    <div class="num" data-target="800">0</div>
+                    <div class="label">Volunteers Engaged</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="grid" id="achv-grid">
+            <article class="card" data-cat="community">
+                <h3>Peace Chain Initiative — Phase 2</h3>
+                <p>Organized the Peace Chain Initiative across Mumbai and Bhopal to commemorate Gandhi Jayanti and the
+                    International Day of Non-Violence, engaging multiple clubs and local communities.</p>
+                <span class="chip">Community</span>
+            </article>
+            <article class="card" data-cat="awards">
+                <h3>Top 10 Community Services Club</h3>
+                <p>RCMSKC ranked among the top 10 clubs for community service in the district for outstanding outreach
+                    and impact.</p>
+                <span class="chip">Award</span>
+            </article>
+            <article class="card" data-cat="collab">
+                <h3>District & Inter-Club Collaborations</h3>
+                <p>Partnered with multiple Rotaract clubs and institutions to deliver large-scale awareness campaigns
+                    and donation drives.</p>
+                <span class="chip">Collaboration</span>
+            </article>
+            <article class="card" data-cat="events">
+                <h3>Animal Shelter Drive</h3>
+                <p>Organized donation and volunteer visits to local animal shelters, raising funds and supplies to
+                    support animal welfare.</p>
+                <span class="chip">Event</span>
+            </article>
+            <article class="card" data-cat="community">
+                <h3>Shiksha — Education Outreach</h3>
+                <p>Regular skill-building workshops and awareness sessions to support underprivileged students and youth
+                    development.</p>
+                <span class="chip">Community</span>
+            </article>
+            <article class="card" data-cat="collab">
+                <h3>Certificate Exchanges & Co-hosts</h3>
+                <p>Shared collaboration certificates and hosted joint events with clubs across India and
+                    internationally, strengthening our network.</p>
+                <span class="chip">Collaboration</span>
+            </article>
+        </div>
+
+        <div class="timeline" aria-hidden="false">
+            <div class="timeline-item">
+                <div class="when">Oct 2, 2024</div>
+                <h4>Peace Chain Initiative</h4>
+                <div class="when">Collaborated with Rotaract Club of Madhyanchal Professional University and others.
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="when">Nov 2024</div>
+                <h4>Ranked Top 10</h4>
+                <div class="when">Recognized for community service across the district.</div>
+            </div>
+            <div class="timeline-item">
+                <div class="when">Ongoing</div>
+                <h4>Skill Development Camps</h4>
+                <div class="when">Monthly workshops under the 'Shiksha' initiative.</div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        document.querySelectorAll('[data-target]').forEach(el => {
+            const target = +el.getAttribute('data-target');
+            let current = 0;
+            const step = Math.max(1, Math.floor(target / 80));
+            const timer = setInterval(() => {
+                current += step;
+                if (current >= target) { el.textContent = target; clearInterval(timer) } else el.textContent = current;
+            }, 12);
+        });
+
+        const buttons = document.querySelectorAll('.filters .btn');
+        const cards = document.querySelectorAll('#achv-grid .card');
+        buttons.forEach(btn => btn.addEventListener('click', () => {
+            buttons.forEach(b => b.classList.remove('active'));
+            btn.classList.add('active');
+            const f = btn.getAttribute('data-filter');
+            cards.forEach(c => {
+                if (f === 'all') c.style.display = 'block';
+                else c.style.display = c.getAttribute('data-cat') === f ? 'block' : 'none';
+            });
+        }));
+
+        buttons.forEach(b => b.addEventListener('keydown', e => { if (e.key === 'Enter') b.click() }));
+    </script>
+</body>
+
+</html>

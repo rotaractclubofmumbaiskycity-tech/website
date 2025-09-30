@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rotary Themes Hierarchy</title>
+    <style>
+        /*
+         * --- GENERAL STYLES & LAYOUT ---
+         */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f7f9;
+            color: #333;
+        }
+
+        .showcase-header {
+            text-align: center;
+            color: #00447C;
+            /* Dark Rotary Blue */
+            margin-bottom: 40px;
+        }
+
+        .themes-grid {
+            /* Main container for the three cards */
+            display: flex;
+            flex-wrap: wrap;
+            gap: 25px;
+            /* Space between the cards */
+            justify-content: center;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        /*
+         * --- INDIVIDUAL THEME CARD STYLES ---
+         */
+        .theme-card {
+            flex: 1 1 300px;
+            /* Allows cards to be flexible but ensures a minimum width */
+            background-color: #ffffff;
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .theme-card:hover {
+            transform: translateY(-5px);
+            /* Lift card on hover */
+        }
+
+        .theme-content {
+            display: flex;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+
+        .logo-space {
+            /* Area for the logo image */
+            flex: 0 0 80px;
+            margin-right: 20px;
+            text-align: center;
+        }
+
+        .theme-logo {
+            /* Styling for the actual logo image */
+            width: 100%;
+            height: auto;
+            max-height: 80px;
+        }
+
+        .theme-info {
+            flex-grow: 1;
+        }
+
+        .theme-label {
+            font-size: 0.9em;
+            margin: 0;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .theme-text {
+            font-size: 1.6em;
+            font-weight: bold;
+            margin: 5px 0 10px 0;
+            line-height: 1.2;
+        }
+
+        .theme-tagline {
+            font-size: 1em;
+            line-height: 1.4;
+            color: #555;
+        }
+
+        /* --- Custom Colors for Themes --- */
+
+        /* RI: Unite for Good */
+        .ri-card {
+            border-top: 5px solid #0076a8;
+        }
+
+        /* Rotary Blue */
+        .ri-card .theme-text {
+            color: #0076a8;
+        }
+
+        .ri-card .theme-label {
+            color: #0076a8;
+        }
+
+        /* District 3141: Spark */
+        .district-card {
+            border-top: 5px solid #F28B00;
+        }
+
+        /* Rotary Orange/Gold */
+        .district-card .theme-text {
+            color: #F28B00;
+        }
+
+        .district-card .theme-label {
+            color: #F28B00;
+        }
+
+        /* Parent Club: Inspire */
+        .parent-card {
+            border-top: 5px solid #00A3A0;
+        }
+
+        /* Teal/Green for differentiation */
+        .parent-card .theme-text {
+            color: #00A3A0;
+        }
+
+        .parent-card .theme-label {
+            color: #00A3A0;
+        }
+
+        /* --- Responsive adjustment for smaller screens --- */
+        @media (max-width: 650px) {
+            .themes-grid {
+                flex-direction: column;
+                /* Stack cards vertically */
+            }
+
+            .theme-card {
+                flex: 1 1 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1 class="showcase-header">Our Rotary Family's Focus</h1>
+
+    <div class="themes-grid">
+
+        <div class="theme-card ri-card">
+            <div class="theme-content">
+                <div class="logo-space">
+                    <img src="img/ri-logo.png" alt="Rotary International Logo" class="theme-logo">
+                </div>
+                <div class="theme-info">
+                    <p class="theme-label">Rotary International (2025-2026)</p>
+                    <h2 class="theme-text">Unite for Good</h2>
+                </div>
+            </div>
+            <p class="theme-tagline">
+                The global message to unite and take action to create lasting change across the world.
+            </p>
+        </div>
+
+        <div class="theme-card district-card">
+            <div class="theme-content">
+                <div class="logo-space">
+                    <img src="img/district-3141-logo.png" alt="District 3141 Logo" class="theme-logo">
+                </div>
+                <div class="theme-info">
+                    <p class="theme-label">Rotary District 3141 Theme</p>
+                    <h2 class="theme-text">Spark</h2>
+                </div>
+            </div>
+            <p class="theme-tagline">
+                The District focus on igniting enthusiasm and action among members in the Mumbai region.
+            </p>
+        </div>
+
+        <div class="theme-card parent-card">
+            <div class="theme-content">
+                <div class="logo-space">
+                    <img src="parent-club-logo.png" alt="Parent Club Logo" class="theme-logo">
+                </div>
+                <div class="theme-info">
+                    <p class="theme-label">Our Parent Rotary Club</p>
+                    <h2 class="theme-text">Inspire</h2>
+                </div>
+            </div>
+            <p class="theme-tagline">
+                Our sponsoring club's mission to inspire community engagement and the next generation of leaders.
+            </p>
+        </div>
+
+    </div>
+
+</body>
+
+</html>

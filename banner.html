@@ -1,0 +1,125 @@
+<!-- Banner Section -->
+<!-- <section class="banner">
+        <!-- Rotary Logo (Top Left) -->
+<!-- <img src="logo.png" alt="Rotary Logo" class="rotary-logo"> -->
+
+<!-- Center Content -->
+<div class="banner-content">
+    <img src="img/year_theme_logo.png" alt="Club Logo" class="club-logo">
+
+    <h1>Welcome to the Club</h1>
+    <p class="intro">
+        We are the Rotaract Club of Mumbai Sky City – a community of passionate young leaders
+        dedicated to service, friendship, and creating lasting impact.
+    </p>
+
+    <!-- Yearly Theme -->
+    <div class="theme">
+        <h2>D3</h2>
+        <p class="tagline">Dream Dare Do</p>
+    </div>
+
+    <!-- Social Media Icons -->
+    <div class="social-icons">
+        <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+        <a href="https://youtube.com" target="_blank"><i class="fab fa-youtube"></i></a>
+    </div>
+</div>
+</section>
+
+
+<!-- CSS -->
+.banner {
+position: relative;
+/* background: url('banner-bg.png') center/cover no-repeat; */
+height: 100vh;
+display: flex;
+align-items: center;
+justify-content: center;
+text-align: center;
+color: #fff;
+padding: 20px;
+overflow: hidden;
+}
+
+/* Light Overlay */
+.banner::before {
+content: "";
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+background: rgba(255, 255, 255, 0.1);
+/* lighter overlay for visibility */
+z-index: 1;
+}
+
+/* Rotary Logo */
+.rotary-logo {
+position: absolute;
+top: 20px;
+left: 20px;
+width: 100px;
+z-index: 2;
+}
+
+/* Club Logo */
+.club-logo {
+max-width: 180px;
+margin-bottom: 20px;
+padding-top: 80px;
+}
+
+/* Ensure content stays above overlay */
+.banner-content {
+position: relative;
+z-index: 2;
+}
+
+.banner-content h1 {
+font-size: 2.8rem;
+margin-bottom: 10px;
+text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.6);
+/* extra readability */
+}
+
+.intro {
+font-size: 1.2rem;
+max-width: 700px;
+margin: 0 auto 20px auto;
+line-height: 1.6;
+text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
+}
+
+.theme h2 {
+font-size: 2rem;
+margin-bottom: 5px;
+text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.6);
+}
+
+.theme .tagline {
+font-size: 1.3rem;
+font-style: italic;
+margin-bottom: 20px;
+text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+.social-icons {
+margin-top: 20px;
+}
+
+.social-icons a {
+color: #fff;
+font-size: 1.5rem;
+margin: 0 10px;
+transition: color 0.3s;
+}
+
+.social-icons a:hover {
+color: #f39c12;
+}
+</style>
+<!-- <style>
