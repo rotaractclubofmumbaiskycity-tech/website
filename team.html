@@ -25,6 +25,7 @@
     <link rel="stylesheet" href="css/slick.css">
     <!-- style CSS -->
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/custom-theme.css">
 </head>
 
 <body>
@@ -35,8 +36,7 @@
                 <div class="row align-items-center">
                     <div class="col-lg-12">
                         <nav class="navbar navbar-expand-lg navbar-light">
-                            <a class="navbar-brand" href="index.html"> <img src="img/logo.png" alt="logo" height="170"
-                                    width="470"> </a>
+                            <a class="navbar-brand" href="index.html"> <img src="img/logo.png" alt="logo" class="img-center"> </a>
                             <button class="navbar-toggler" type="button" data-toggle="collapse"
                                 data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                                 aria-expanded="false" aria-label="Toggle navigation">
@@ -44,25 +44,42 @@
                             </button>
 
                             <div class="collapse navbar-collapse main-menu-item justify-content-end"
-                                id="navbarSupportedContent">
-                                <ul class="navbar-nav align-items-center">
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="index.html">Home</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="about.html">About</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="team.html">Team</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="events.html">Events</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="contact.html">Contact</a>
-                                    </li>
-                                </ul>
-                            </div>
+                            id="navbarSupportedContent">
+                            <ul class="navbar-nav align-items-center">
+                                <!-- Top 4 items -->
+                                <li class="nav-item">
+                                    <a class="nav-link" href="index.html">Home</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="about.html">About</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="team.html">Team</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="events.html">Events</a>
+                                </li>
+
+                                <!-- Dropdown for remaining items -->
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                        aria-expanded="false">
+                                        More
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <!-- <li><a class="dropdown-item" href="achievement.html">Achievements</a></li> -->
+                                        <li><a class="dropdown-item" href="history_of_club/previous_team.html">RCMSKC
+                                                Journey</a></li>
+                                        <li><a class="dropdown-item" href="contact.html">Contact</a></li>
+                                        <li><a class="dropdown-item" href="all_org_theme.html">Themes</a></li>
+                                        <li><a class="dropdown-item" href="blogs.html">Blogs</a></li>
+                                        <li><a class="dropdown-item" href="upcoming_events.html">Upcoming Events</a>
+                                        </li>
+                                        <li><a class="dropdown-item" href="testimonial.html">Testimonials</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
                         </nav>
                     </div>
                 </div>
@@ -71,7 +88,7 @@
         <!-- Header part end-->
 
         <!-- breadcrumb start-->
-        <section class="breadcrumb breadcrumb_bg">
+        <!-- <section class="breadcrumb breadcrumb_bg">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-12">
@@ -82,30 +99,23 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </section> -->
     </div>
     <!-- breadcrumb start-->
 
     <!--::volunteers_part start::-->
     <section class="volunteers_part padding_top single_page_volunteers">
         <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-xl-8">
-                    <div class="section_tittle text-center">
-                        <p>members</p>
-                    </div>
-                </div>
-            </div>
+
             <h1 class="row justify-content-center">Rotarians</h1>
             <div class="col-xl-12">
                 <hr>
             </div>
             <div class="row justify-content-center">
-                <div class="col-sm-6 col-lg-3">
+                <!-- <div class="col-sm-6 col-lg-3">
                     <div class="single_blog_item">
                         <div class="single_blog_img">
-                            <img src="img/current_team/rajen.jpg" alt="doctor" height="385px" width="240px">
-                            >
+                            <img src="img/current_team/risheeta.jpg" alt="Rtn. Mithoon Gada" class="team-photo img-center img-cover">
                         </div>
                         <div class="single_text">
                             <div class="single_blog_text">
@@ -114,11 +124,11 @@
                             </div>
                         </div>
                     </div>
-                </div>
+                </div> -->
                 <div class="col-sm-6 col-lg-3">
                     <div class="single_blog_item">
                         <div class="single_blog_img">
-                            <img src="img/current_team/vishal.jpg" alt="doctor" height="385px" width="240px">
+                            <img src="img/current_team/niru_p.jpeg" alt="Rtn.Niru Patel Singhal" class="team-photo img-center img-cover">
                             <div class="social_icon">
                                 <a href="https://www.facebook.com/dimple.tanwar.98"> <i class="ti-facebook"></i> </a>
                                 <a href="https://www.instagram.com/vrushali_gaonkar/?hl=en"> <i
@@ -127,12 +137,31 @@
                         </div>
                         <div class="single_text">
                             <div class="single_blog_text">
-                                <h3>Rtn.Rajesh Singhal</h3>
+                                <h3>Rtn.Niru Patel</h3>
+                                <p>President</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                 <div class="col-sm-6 col-lg-3">
+                    <div class="single_blog_item">
+                        <div class="single_blog_img">
+                            <img src="img/current_team/AjayBalan.jpeg" alt="Rtn. Ajay Balan" class="team-photo img-center img-cover">
+                            <div class="social_icon">
+                                <a href="https://www.facebook.com/dimple.tanwar.98"> <i class="ti-facebook"></i> </a>
+                                <a href="https://www.instagram.com/vrushali_gaonkar/?hl=en"> <i
+                                        class="ti-instagram"></i> </a>
+                            </div>
+                        </div>
+                        <div class="single_text">
+                            <div class="single_blog_text">
+                                <h3>Rtn. Ajay Balan</h3>
                                 <p>Secretary</p>
                             </div>
                         </div>
                     </div>
                 </div>
+
                 <!-- <div class="col-sm-6 col-lg-3">
                     <div class="single_blog_item">
                         <div class="single_blog_img">
@@ -152,33 +181,31 @@
                     </div>
                 </div> -->
             </div>
-            <h1 class="row justify-content-center">Core team</h1>
+            <!-- <h1 class="row justify-content-center">Core team</h1>
             <div class="col-xl-12">
                 <hr>
-            </div>
+            </div> -->
             <h1 class="row justify-content-center">Core Team</h1>
             <div class="col-xl-12">
                 <hr>
             </div>
 
             <div class="row justify-content-center">
+
                 <div class="col-sm-6 col-lg-3">
                     <div class="single_blog_item">
                         <div class="single_blog_img">
-                            <img src="img/current_team/risheeta.jpg" alt="doctor">
+                            <img src="img/current_team/Shubham_d.jpg" alt="Rtr Shubham Dubey" class="team-photo img-center img-cover">
                             <div class="social_icon">
                                 <a href="https://www.facebook.com/vrushali.gaonkar"> <i class="ti-facebook"></i> </a>
-                                <a href="https://www.instagram.com/vrushali_gaonkar/?hl=en"> <i
+                                <a href="https://www.instagram.com/shubham_no.45/?hl=en"> <i
                                         class="ti-instagram"></i>
                                 </a>
                             </div>
                         </div>
-
                         <div class="single_text">
-                            <div class="single_blog_text">
-                                <h3>Rtr Risheeta Jain</h3>
-                                <p>Club President 2025-26</p>
-                            </div>
+                            <h3>Rtr Shubham Dubey</h3>
+                            <p>President</p>
                         </div>
                     </div>
                 </div>
@@ -186,7 +213,7 @@
                 <div class="col-sm-6 col-lg-3">
                     <div class="single_blog_item">
                         <div class="single_blog_img">
-                            <img src="img/current_team/shubham_m.jpg" alt="Shubham">
+                            <img src="img/current_team/saurav_hathi.jpg" alt="Rtr Saurav Hathi" class="team-photo img-center img-cover">
                             <div class="social_icon">
                                 <a href="https://www.facebook.com/vrushali.gaonkar"> <i class="ti-facebook"></i> </a>
                                 <a href="https://www.instagram.com/vrushali_gaonkar/?hl=en"> <i
@@ -195,16 +222,89 @@
                             </div>
                         </div>
                         <div class="single_text">
-                            <h3>Rtr Shubham Marathe</h3>
+                            <h3>Rtr Saurav Hathi</h3>
                             <p>Club Secretary</p>
                         </div>
                     </div>
                 </div>
 
+
+                 <div class="col-sm-6 col-lg-3">
+                    <div class="single_blog_item">
+                        <div class="single_blog_img">
+                            <img src="img/current_team/risheeta.jpg" alt="Rtr Risheeta Jain" class="team-photo img-center img-cover">
+                            <div class="social_icon">
+                                <a href="https://www.facebook.com/vrushali.gaonkar"> <i class="ti-facebook"></i> </a>
+                                <a href="https://www.instagram.com/vrushali_gaonkar/?hl=en"> <i
+                                        class="ti-instagram"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="single_text">
+                            <h3>Rtr Risheeta Jain</h3>
+                            <p>Immediate Past President</p>
+                        </div>
+                    </div>
+                </div>
+
                 <div class="col-sm-6 col-lg-3">
                     <div class="single_blog_item">
                         <div class="single_blog_img">
-                            <img src="img/current_team/kartik.jpg" alt="Kartik">
+                            <img src="img/current_team/atul_n.jpg" alt="Rtr Atul Nirmal " class="team-photo img-center img-cover">
+                            <div class="social_icon">
+                                <a href="https://media.makeameme.org/created/atul-nawale-and.jpg"> <i class="ti-facebook"></i> </a>
+                                <a href="https://media.makeameme.org/created/atul-nawale-and.jpg"> <i
+                                        class="ti-instagram"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="single_text">
+                            <h3>Rtr Atul Nirmal </h3>
+                            <p>SAA & Jt. Secretary</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-6 col-lg-3">
+                    <div class="single_blog_item">
+                        <div class="single_blog_img">
+                            <img src="img/current_team/prajakta.jpg" alt="Rtr Prajakta Sarvankar" class="team-photo img-center img-cover">
+                            <div class="social_icon">
+                                <a href="https://www.facebook.com/vrushali.gaonkar"> <i class="ti-facebook"></i> </a>
+                                <a href="https://www.instagram.com/vrushali_gaonkar/?hl=en"> <i
+                                        class="ti-instagram"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="single_text">
+                              <h3>Rtr Prajakta Sarvankar</h3>
+                                <p>Vice President</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-6 col-lg-3">
+                    <div class="single_blog_item">
+                        <div class="single_blog_img">
+                            <img src="img/current_team/meyur.jpg" alt="Rtr Meyur Shah" class="team-photo img-center img-cover">
+                            <div class="social_icon">
+                                <a href="https://www.facebook.com/vrushali.gaonkar"> <i class="ti-facebook"></i> </a>
+                                <a href="https://www.instagram.com/vrushali_gaonkar/?hl=en"> <i
+                                        class="ti-instagram"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="single_text">
+                              <h3>Rtr Meyur Shah</h3>
+                                <p>Vice President</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-6 col-lg-3">
+                    <div class="single_blog_item">
+                        <div class="single_blog_img">
+                            <img src="img/current_team/kartik.jpg" alt="Rtr Kartik Sharma" class="team-photo img-center img-cover">
                             <div class="social_icon">
                                 <a href="https://www.facebook.com/vrushali.gaonkar"> <i class="ti-facebook"></i> </a>
                                 <a href="https://www.instagram.com/vrushali_gaonkar/?hl=en"> <i
@@ -214,7 +314,7 @@
                         </div>
                         <div class="single_text">
                             <h3>Rtr Kartik Sharma</h3>
-                            <p>Immediate Past President</p>
+                            <p>Chairman HRD</p>
                         </div>
                     </div>
                 </div>
@@ -222,7 +322,7 @@
                 <div class="col-sm-6 col-lg-3">
                     <div class="single_blog_item">
                         <div class="single_blog_img">
-                            <img src="img/current_team/chhaya.jpg" alt="Chhaya">
+                            <img src="img/current_team/chhaya.jpg" alt="Rtr Chhaya Ghante" class="team-photo img-center img-cover">
                             <div class="social_icon">
                                 <a href="https://www.facebook.com/vrushali.gaonkar"> <i class="ti-facebook"></i> </a>
                                 <a href="https://www.instagram.com/vrushali_gaonkar/?hl=en"> <i
@@ -231,38 +331,18 @@
                             </div>
                         </div>
                         <div class="single_text">
-                            <div class="single_blog_text">
-                                <h3>Rtr Chhaya Ghante</h3>
-                                <p>Vice President</p>
-                            </div>
+                              <h3>Rtr Chhaya Ghante</h3>
+                                <p>Chairwoman Finance</p>
                         </div>
                     </div>
                 </div>
+
             </div>
             <div class="row justify-content-center">
                 <div class="col-sm-6 col-lg-3">
                     <div class="single_blog_item">
                         <div class="single_blog_img">
-                            <img src="img/current_team/prajakta.jpg" alt="doctor">
-                            <div class="social_icon">
-                                <a href="https://www.facebook.com/vrushali.gaonkar"> <i class="ti-facebook"></i> </a>
-                                <a href="https://www.instagram.com/vrushali_gaonkar/?hl=en"> <i
-                                        class="ti-instagram"></i>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="single_text">
-                            <div class="single_blog_text">
-                                <h3>Rtr Prajakta Sarvankar</h3>
-                                <p>Sergeant-at-Arms & Treasurer</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-6 col-lg-3">
-                    <div class="single_blog_item">
-                        <div class="single_blog_img">
-                            <img src="img/current_team/amar.jpg" alt="doctor">
+                            <img src="img/current_team/amar.jpg" alt="Rtr. Amar Singh" class="team-photo img-center img-cover">
                             <div class="social_icon">
                                 <a href="https://www.facebook.com/vrushali.gaonkar"> <i class="ti-facebook"></i>
                                 </a>
@@ -273,7 +353,7 @@
                         <div class="single_text">
                             <div class="single_blog_text">
                                 <h3>Rtr. Amar Singh</h3>
-                                <p>HRD Officer </p>
+                                <p>Chairman Finance</p>
                             </div>
                         </div>
                     </div>
@@ -281,7 +361,7 @@
                 <div class="col-sm-6 col-lg-3">
                     <div class="single_blog_item">
                         <div class="single_blog_img">
-                            <img src="img/current_team/ganesh.jpg" alt="doctor">
+                            <img src="img/current_team/ganesh.jpg" alt="Rtn Rtr. Ganesh Kadam" class="team-photo img-center img-cover">
                             <div class="social_icon">
                                 <a href="https://www.facebook.com/vrushali.gaonkar">
                                     <i class="ti-facebook"></i> </a>
@@ -301,7 +381,7 @@
                 <div class="col-sm-6 col-lg-3">
                     <div class="single_blog_item">
                         <div class="single_blog_img">
-                            <img src="img/current_team/nirav.jpg" alt="doctor">
+                            <img src="img/current_team/nirav.jpg" alt="Rtr Nirav Joshi" class="team-photo img-center img-cover">
                             <div class="social_icon">
                                 <a href="https://www.facebook.com/vrushali.gaonkar">
                                     <i class="ti-facebook"></i> </a>
@@ -312,29 +392,26 @@
                         <div class="single_text">
                             <div class="single_blog_text">
                                 <h3>Rtr Nirav Joshi</h3>
-                                <p>Club Advisor & PIS Chair</p>
+                                <p>Club Advisor</p>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
+            <div class="row">
+                <div class="col-xl-12">
+                    <hr>
+                </div>
+                <div class="col-xl-12 text-center">
+                    <h1>Board of Directors</h1>
+                </div>
+            </div>
 
-        </div>
-        </div>
-        </div>
-        </div>
-        <div class="col-xl-12">
-            <hr>
-        </div>
-        <h1 class="row justify-content-center">Board of Directors
-        </h1>
-
-
-        <div class="row justify-content-center">
-            <div class="col-sm-6 col-lg-3">
+            <div class="row justify-content-center">
+                <div class="col-sm-6 col-lg-3">
                 <div class="single_blog_item">
                     <div class="single_blog_img">
-                        <img src="img/current_team/shweta.jpg" alt="Shweta" height="385px">
+                        <img src="img/current_team/anshika_d.jpg" alt="Rtr Anshika Dubey" class="team-photo img-center img-cover">
                         <div class="social_icon">
                             <a href="https://m.facebook.com/supriya.pandey.7"><i class="ti-facebook"></i></a>
                             <a href="https://www.instagram.com/invites/contact/?i=n5xiuenn0olq&utm_content=hgjnfl"><i
@@ -343,7 +420,7 @@
                     </div>
                     <div class="single_text">
                         <div class="single_blog_text">
-                            <h3>Rtr Shweta Shah</h3>
+                            <h3>Rtr Anshika Dubey</h3>
                             <p>Community Service Director</p>
                         </div>
                     </div>
@@ -353,26 +430,7 @@
             <div class="col-sm-6 col-lg-3">
                 <div class="single_blog_item">
                     <div class="single_blog_img">
-                        <img src="img/current_team/mrunmai.jpg" alt="Mrunmai" height="385px">
-                        <div class="social_icon">
-                            <a href="https://www.facebook.com/atul.pandey.9275"><i class="ti-facebook"></i></a>
-                            <a href="https://www.instagram.com/invites/contact/?i=67wc31mu8xs&utm_content=31gz9pu"><i
-                                    class="ti-instagram"></i></a>
-                        </div>
-                    </div>
-                    <div class="single_text">
-                        <div class="single_blog_text">
-                            <h3>Rtr Mrunmai Mohite</h3>
-                            <p>Community Service Director</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-sm-6 col-lg-3">
-                <div class="single_blog_item">
-                    <div class="single_blog_img">
-                        <img src="img/current_team/netra.jpg" alt="Netra" height="385px">
+                        <img src="img/current_team/netra.jpg" alt="Rtr Netra Jain" class="team-photo img-center img-cover">
                         <div class="social_icon">
                             <a href="https://instagram.com/jain_ankit_aj?igshid=y9pqeuwl7hjn"><i
                                     class="ti-instagram"></i></a>
@@ -392,15 +450,36 @@
             <div class="col-sm-6 col-lg-3">
                 <div class="single_blog_item">
                     <div class="single_blog_img">
-                        <img src="img/current_team/shubham_d.jpg" alt="Shubham" height="385px">
+                        <img src="img/current_team/akash.jpg" alt="Rtr Akash Yadav" class="team-photo img-center img-cover">
+                        <div class="social_icon">
+                            <a href="https://www.facebook.com/atul.pandey.9275"><i class="ti-facebook"></i></a>
+                            <a href="https://www.instagram.com/invites/contact/?i=67wc31mu8xs&utm_content=31gz9pu"><i
+                                    class="ti-instagram"></i></a>
+                        </div>
+                    </div>
+                    <div class="single_text">
+                        <div class="single_blog_text">
+                            <h3>Rtr Akash Yadav</h3>
+                            <p>Sports Director</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="col-sm-6 col-lg-3">
+                <div class="single_blog_item">
+                    <div class="single_blog_img">
+                        <img src="img/current_team/mayank.jpg" alt="Rtr Mayank Dubey" class="team-photo img-center img-cover">
                         <div class="social_icon">
                             <a href="https://www.instagram.com/daiyamahesh?r=nametag"><i class="ti-instagram"></i></a>
                         </div>
                     </div>
                     <div class="single_text">
                         <div class="single_blog_text">
-                            <h3>Rtr Shubham Dubey</h3>
-                            <p>Sports Director</p>
+                            <h3>Rtr Mayank Dubey</h3>
+                            <p>Sports Director & Social Media Manager</p>
                         </div>
                     </div>
                 </div>
@@ -411,15 +490,15 @@
             <div class="col-sm-6 col-lg-3">
                 <div class="single_blog_item">
                     <div class="single_blog_img">
-                        <img src="img/current_team/meyur.jpg" alt="Meyur" height="385px">
+                        <img src="img\current_team\rohit.jpg" alt="Rtr Rohit Surve" class="team-photo img-center img-cover">
                         <div class="social_icon">
                             <a href="https://www.instagram.com/sundersingh1237/"><i class="ti-instagram"></i></a>
                         </div>
                     </div>
                     <div class="single_text">
                         <div class="single_blog_text">
-                            <h3>Rtr Meyur Shah</h3>
-                            <p>Entrepreneurship Director</p>
+                            <h3>Rtr Rohit Surve</h3>
+                            <p>Digital Communications Director</p>
                         </div>
                     </div>
                 </div>
@@ -428,7 +507,7 @@
             <div class="col-sm-6 col-lg-3">
                 <div class="single_blog_item">
                     <div class="single_blog_img">
-                        <img src="img/current_team/aayush.png" alt="Aayush" height="385px">
+                        <img src="img/current_team/aayush.png" alt="Rtr Aayush Shah" class="team-photo img-center img-cover">
                         <div class="social_icon">
                             <a href="https://www.facebook.com/sahewal.akash"><i class="ti-facebook"></i></a>
                             <a href="https://instagram.com/akash_sahewal"><i class="ti-instagram"></i></a>
@@ -446,7 +525,7 @@
             <div class="col-sm-6 col-lg-3">
                 <div class="single_blog_item">
                     <div class="single_blog_img">
-                        <img src="img/current_team/saurav.jpg" alt="Saurav" height="385px" width="260px">
+                        <img src="img/current_team/rahul_agar.jpg" alt="Rtr Saurav Hathi" class="team-photo img-center img-cover">
                         <div class="social_icon">
                             <a href="https://www.facebook.com/aayush.shah.167"><i class="ti-facebook"></i></a>
                             <a href="https://instagram.com/i_aayush_shah?igshid=1whzzp12oyn0p"><i
@@ -455,8 +534,8 @@
                     </div>
                     <div class="single_text">
                         <div class="single_blog_text">
-                            <h3>Rtr Saurav Hathi</h3>
-                            <p>Digi Comm & Social Media Director</p>
+                            <h3>Rtr Rahul Agarwal</h3>
+                            <p>Entrepreneurship Development Director</p>
                         </div>
                     </div>
                 </div>
@@ -465,7 +544,7 @@
             <div class="col-sm-6 col-lg-3">
                 <div class="single_blog_item">
                     <div class="single_blog_img">
-                        <img src="img/current_team/hasmukh.jpg" alt="Hasmukh" height="385px" width="240px">
+                        <img src="img/current_team/hasmukh.jpg" alt="Rtr Hasmukh Parmar" class="team-photo img-center img-cover">
                         <div class="social_icon">
                             <a href="https://www.facebook.com/darshitaaa"><i class="ti-facebook"></i></a>
                             <a href="https://www.instagram.com/_darshitaa_"><i class="ti-instagram"></i></a>
@@ -481,11 +560,46 @@
             </div>
         </div>
 
-        <div class="row justify-content-center">
+         <div class="row justify-content-center">
             <div class="col-sm-6 col-lg-3">
                 <div class="single_blog_item">
                     <div class="single_blog_img">
-                        <img src="img/current_team/aparna.jpg" alt="Aparna" height="385px" width="240px">
+                            <img src="img/current_team/urvi.jpg" alt="Rtr Urvi Rathi" class="team-photo img-center img-cover">
+                        <div class="social_icon">
+                            <a href="https://www.facebook.com/faizeen.behlim"><i class="ti-facebook"></i></a>
+                            <a href="https://instagram.com/faizeen_behlim?r=nametag"><i class="ti-instagram"></i></a>
+                        </div>
+                    </div>
+                    <div class="single_text">
+                        <div class="single_blog_text">
+                            <h3>Rtr Urvi Rathi</h3>
+                            <p>PR & Marketing</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-lg-3">
+                <div class="single_blog_item">
+                    <div class="single_blog_img">
+                            <img src="img/current_team/madhav.jpg" alt="Rtr Madhav Solanki" class="team-photo img-center img-cover">
+                        <div class="social_icon">
+                            <a href="https://www.facebook.com/faizeen.behlim"><i class="ti-facebook"></i></a>
+                            <a href="https://instagram.com/faizeen_behlim?r=nametag"><i class="ti-instagram"></i></a>
+                        </div>
+                    </div>
+                    <div class="single_text">
+                        <div class="single_blog_text">
+                            <h3>Rtr Madhav Solanki</h3>
+                            <p>International Service Director</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-6 col-lg-3">
+                <div class="single_blog_item">
+                    <div class="single_blog_img">
+                            <img src="img/current_team/aparna.jpg" alt="Rtr Aparna Singh" class="team-photo img-center img-cover">
                         <div class="social_icon">
                             <a href="https://www.facebook.com/faizeen.behlim"><i class="ti-facebook"></i></a>
                             <a href="https://instagram.com/faizeen_behlim?r=nametag"><i class="ti-instagram"></i></a>
@@ -499,7 +613,81 @@
                     </div>
                 </div>
             </div>
+             <div class="col-sm-6 col-lg-3">
+                <div class="single_blog_item">
+                    <div class="single_blog_img">
+                            <img src="img/current_team/kashish.jpg" alt="Rtr kashish Dubey" class="team-photo img-center img-cover">
+                        <div class="social_icon">
+                            <a href="https://www.facebook.com/faizeen.behlim"><i class="ti-facebook"></i></a>
+                            <a href="https://instagram.com/faizeen_behlim?r=nametag"><i class="ti-instagram"></i></a>
+                        </div>
+                    </div>
+                    <div class="single_text">
+                        <div class="single_blog_text">
+                            <h3>Rtr Kashish Dubey</h3>
+                            <p>Social Media Manager</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
+        <div class="row justify-content-center">
+            <div class="col-sm-6 col-lg-3">
+                <div class="single_blog_item">
+                    <div class="single_blog_img">
+                        <img src="img/current_team/atharva.jpg" alt="Rtr Atharva Madiwale" class="team-photo img-center img-cover">
+                        <div class="social_icon">
+                            <a href="https://www.facebook.com/sahewal.akash"><i class="ti-facebook"></i></a>
+                            <a href="https://instagram.com/akash_sahewal"><i class="ti-instagram"></i></a>
+                        </div>
+                    </div>
+                    <div class="single_text">
+                        <div class="single_blog_text">
+                            <h3>Rtr Atharva Madiwale</h3>
+                            <p>Partners-in-service Director</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-6 col-lg-3">
+                <div class="single_blog_item">
+                    <div class="single_blog_img">
+                        <img src="img/current_team/priyansh.jpg" alt="Rtr Priyansh Panda" class="team-photo img-center img-cover">
+                        <div class="social_icon">
+                            <a href="https://www.facebook.com/sahewal.akash"><i class="ti-facebook"></i></a>
+                            <a href="https://instagram.com/akash_sahewal"><i class="ti-instagram"></i></a>
+                        </div>
+                    </div>
+                    <div class="single_text">
+                        <div class="single_blog_text">
+                            <h3>Rtr Priyansh Panda</h3>
+                            <p>International Service Director</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+                        <div class="col-sm-6 col-lg-3">
+                <div class="single_blog_item">
+                    <div class="single_blog_img">
+                        <img src="img/current_team/aditya.jpg" alt="Rtr Aditya Phad" class="team-photo img-center img-cover">
+                        <div class="social_icon">
+                            <a href="https://www.facebook.com/sahewal.akash"><i class="ti-facebook"></i></a>
+                            <a href="https://instagram.com/akash_sahewal"><i class="ti-instagram"></i></a>
+                        </div>
+                    </div>
+                    <div class="single_text">
+                        <div class="single_blog_text">
+                            <h3>Rtr Aditya Phad</h3>
+                            <p>Photographer</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+
+
 
         <!-- <h1 class="row justify-content-center">Members</h1>
         <div class="col-xl-12">
@@ -705,7 +893,7 @@
             <div class="row justify-content-between">
                 <div class="col-sm-6 col-md-4 col-xl-3">
                     <div class="single-footer-widget footer_1">
-                        <a href="index.html"> <img src="img/logo.png" alt="" height="170px"> </a>
+                        <a href="index.html"> <img src="img/logo.png" alt="" class="img-center"> </a>
                         <p class="container text-center">Rotaract clubs are part of a global effort to bring peace and
                             international understanding to the world. This effort starts at the community level but
                             knows no limits in its outreach.
@@ -719,11 +907,22 @@
                         </p>
 
                         <div class="social_icon">
-                            <a href="https://www.facebook.com/rcmskc-2535810549787125/"> <i class="ti-facebook"></i>
-                            </a>
-                            <a href="https://mobile.twitter.com/rcmskc"> <i class="ti-twitter-alt"></i> </a>
-                            <a href="https://instagram.com/rcmskc?igshid=1r3tz93p2dv1h"> <i class="ti-instagram"></i>
-                            </a>
+                            <div class="col-lg-6 px-5 text-end social-icons">
+                                <!-- <small>Follow us:</small> -->
+                                <a href="https://facebook.com/yourpage" target="_blank"><i
+                                        class="fab fa-facebook-f"></i></a>
+                                <a href="https://instagram.com/yourpage" target="_blank"><i
+                                        class="fab fa-instagram"></i></a>
+                                <a href="https://youtube.com/yourchannel" target="_blank"><i
+                                        class="fab fa-youtube"></i></a>
+                                <a href="https://www.threads.net/@yourpage" target="_blank"><i
+                                        class="fa-brands fa-threads"></i></a>
+                                <a href="https://linkedin.com/in/yourpage" target="_blank"><i
+                                        class="fab fa-linkedin-in"></i></a>
+                                <a href="https://pinterest.com/yourpage" target="_blank"><i
+                                        class="fab fa-pinterest-p"></i></a>
+                            </div>
+
                         </div>
                     </div>
                 </div>

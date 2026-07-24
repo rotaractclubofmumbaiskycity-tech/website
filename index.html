@@ -8,8 +8,8 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Rotaract Club</title>
-    <link rel="icon" href="img/favicon.png">
+    <title>RC-Mumbai Sky City</title>
+    <link rel="icon" href="img/fav-icon.png">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <!-- animate CSS -->
@@ -28,6 +28,120 @@
     <link rel="stylesheet" href="css/slick.css">
     <!-- style CSS -->
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/custom-theme.css">
+    <style>
+        .testimonial-section {
+            padding: 80px 0;
+            background: #f8f9fb;
+        }
+        .testimonial-section .section-badge {
+            display: inline-block;
+            border-radius: 50px;
+            background: #8a1d28;
+            color: #fff;
+            font-weight: 600;
+            padding: 6px 18px;
+            margin-bottom: 1rem;
+        }
+        .testimonial-section .section-heading {
+            color: #8a1d28;
+            font-weight: 700;
+            margin-bottom: 2rem;
+        }
+        .testimonial-item {
+            position: relative;
+            max-width: 640px;
+            margin: 0 auto;
+            padding-top: 90px;
+        }
+        .testimonial-item img {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            object-fit: cover;
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            background: #fff;
+            padding: 6px;
+            border: 4px solid #fff;
+            box-shadow: 0 24px 40px rgba(0, 0, 0, 0.16);
+            z-index: 2;
+        }
+        .testimonial-text {
+            background: #8a1d28;
+            color: #fff;
+            padding: 4rem 2rem 2rem;
+            border-radius: 24px;
+            margin-top: 70px;
+            box-shadow: 0 16px 40px rgba(16, 24, 40, 0.14);
+            position: relative;
+            min-height: 260px;
+        }
+        .testimonial-text p {
+            margin-bottom: 1.5rem;
+            line-height: 1.8;
+            font-size: 1rem;
+        }
+        .testimonial-text h5 {
+            margin-bottom: 0.25rem;
+            font-weight: 700;
+            font-size: 1.05rem;
+        }
+        .testimonial-text span {
+            font-style: italic;
+            color: #f5f5f5;
+            display: block;
+            margin-top: 0.5rem;
+            font-size: 0.95rem;
+        }
+        .testimonial-text span {
+            font-style: italic;
+            color: #f5f5f5;
+        }
+        .owl-carousel .owl-nav {
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%) translateY(50%);
+            display: flex;
+            justify-content: space-between;
+            width: 120px;
+            z-index: 10;
+        }
+        .owl-carousel .owl-nav button {
+            background: #fff;
+            border-radius: 50%;
+            width: 35px;
+            height: 35px;
+            border: 2px solid #8a1d28;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.1rem;
+            color: #8a1d28;
+            transition: all 0.3s ease;
+        }
+        .owl-carousel .owl-nav button:hover {
+            background: #8a1d28;
+            color: #fff;
+        }
+        .owl-carousel .owl-dots {
+            margin-top: 1rem;
+        }
+        .owl-carousel .owl-dots .owl-dot span {
+            width: 12px;
+            height: 12px;
+            background: #ffc1c1;
+            border-radius: 50%;
+            display: inline-block;
+            transition: background 0.3s ease;
+        }
+        .owl-carousel .owl-dots .owl-dot.active span {
+            background: #8a1d28;
+        }
+    </style>
 </head>
 
 <body>
@@ -41,8 +155,9 @@
             <div class="row align-items-center">
                 <div class="col-lg-12">
                     <nav class="navbar navbar-expand-lg navbar-light">
-                        <a class="navbar-brand" href="index.html"> <img src="img/logo.png" alt="logo" height="170"
-                                width="470"> </a>
+                        <a class="navbar-brand" href="index.html">
+                            <img src="img/logo.png" alt="Rotaract Club logo" class="navbar-logo">
+                        </a>
                         <button class="navbar-toggler" type="button" data-toggle="collapse"
                             data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                             aria-expanded="false" aria-label="Toggle navigation">
@@ -61,31 +176,26 @@
                                 </li>
                                 <li class="nav-item">
                                     <a class="nav-link" href="team.html">Team</a>
-                                    <!-- </li>
+                                </li>
                                 <li class="nav-item">
                                     <a class="nav-link" href="events.html">Events</a>
                                 </li>
 
-                                <!-- Dropdown for remaining items -->
                                 <li class="nav-item dropdown">
-                                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                    <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown"
                                         aria-expanded="false">
                                         More
                                     </a>
                                     <ul class="dropdown-menu">
-                                        <!-- <li><a class="dropdown-item" href="achievement.html">Achievements</a></li> -->
-                                        <li><a class="dropdown-item" href="history_of_club/previous_team.html">RCMSKC
-                                                Journey</a></li>
+                                        <li><a class="dropdown-item" href="history_of_club/previous_team.html">RCMSKC Journey</a></li>
                                         <li><a class="dropdown-item" href="contact.html">Contact</a></li>
                                         <li><a class="dropdown-item" href="all_org_theme.html">Themes</a></li>
                                         <li><a class="dropdown-item" href="blogs.html">Blogs</a></li>
-                                        <li><a class="dropdown-item" href="upcoming_events.html">Upcoming Events</a>
-                                        </li>
+                                        <li><a class="dropdown-item" href="upcoming_events.html">Upcoming Events</a></li>
                                         <li><a class="dropdown-item" href="testimonial.html">Testimonials</a></li>
                                     </ul>
                                 </li>
                             </ul>
-                            -->
                         </div>
                     </nav>
                 </div>
@@ -113,7 +223,7 @@
     <!-- banner part start -->
 
 
-    <section class="breadcrumb breadcrumb_bg">
+    <!-- <section class="breadcrumb breadcrumb_bg">
 
         <div class="container">
             <div class="row">
@@ -125,9 +235,7 @@
                 </div>
             </div>
         </div>
-
-
-    </section>
+    </section> -->
     <!-- </div> -->
 
     <section class="feature_part">
@@ -135,60 +243,25 @@
             <h5 style="text-align: center">OUR YEAR THEME</h5>
             <div class="row justify-content-center">
                 <br>
-                <h1>D3 :- Dream Dare DO</h1>
-                <p style="text-align: center"> Good afternoon everyone,
-
-                    Har saal hum apne club ke saath ek nayi journey shuru karte hain. Aur har journey mein hum kuch naya
-                    seekhte hain, kuch
-                    naya karte hain.
-
-                    Do saal pehle humne kaha tha —
-                    "Unfolding Wings – The Transformation Begins."
-                    Woh time tha jab humne apne pankh phailaye… apni pehchaan banayi… aur nayi udaan bhari.
-
-                    Pichle saal humne choose kiya "Lakshya" — ek goal, ek direction.
-                    Woh tha focus ka time. Humne seekha ke bas udna nahi, sahi direction mein udna zaroori hai.
-
-                    Aur ab iss saal… hum lekar aaye hain ek naya thought. Ek simple par powerful theme:
-
-                    ✨ Dream. Dare. Do. ✨
-                    D³ — teen shabdon mein poora safar chhupa hua hai.
-
-                    Dream — kyunki har kaam sapne se hi shuru hota hai.
-                    Agar sochoge nahi, toh karoge kaise?
-
-                    > *"Sapne wahi nahi jo neend mein aaye,
-                    > Sapne toh woh hote hain jo sone hi na dein."*
-
-                    Dare — kyunki sapna dekhna easy hai, par us sapne ko sach karne ki himmat chahiye.
-                    Darr sabko lagta hai, par hum darr ke aage badhne wale log hain.
-
-                    Do — kyunki bina action ke koi sapna poora nahi hota.
-                    Baaton se nahi, kaam se farq padta hai.
-
-                    > *"Sochne se hoti nahi hain manzilein,
-                    > Kadam badhao, toh raaste bante hain."*
-
-                    Iss saal hum bas sapne nahi dekhenge — hum dare karenge kuch naya karne ka… aur fir uss sapne ko do
-                    karenge — poora
-                    karenge, milke, dil se.
-
-                    Chahe project ho ya koi idea,
-                    Chahe challenge ho ya koi badlav…
-                    RCMSKC kabhi peeche nahi hatega.
-
-                    Ye saal sirf kaam ka nahi, impact ka hoga.
-                    Ye saal sirf dreams ka nahi, action ka hoga.
-
-                    So are you ready to Dream big?
-                    Ready to Dare beyond limits?
-                    Ready to Do something unforgettable?
-
-                    Kyuki ab sirf sochna nahi…
-                    Ab kar ke dikhana hai.
-
-                    Let’s make this year the best chapter of our journey.
-                    Let’s Dream. Dare. Do. 💫".
+                <h1>UDAAN :- Beyond Limits Beyonds Boundaries</h1>
+                <img src="img/udaan.png" alt="UDAAN logo" height="300px" width="400px">
+                <br>
+                <p style="text-align: center"> 
+                    From Fitoor to Fateh,<br>
+                    from Ekta to Connect,<br>
+                    from Unfolding Wings to Lakshya,<br>
+                    and finally Dream Dare Do —<br>
+                    every year has shaped our journey, our bond & our legacy. ❤️<br>
+                    Now, after dreaming, daring & doing…<br>
+                    Mumbai Sky City is ready for the next big step. 🌤️🚀<br>
+                    Sapne sirf dekhe nahi jaate…<br>
+                    Unhe hauslon se udaya jaata hai. ✨<br>
+                    🕊️ Presenting the Theme for 2026–27<br>
+                    ✨ UDAAN ✨<br>
+                    🚀 Beyond Limits. Beyond Boundaries. 🚀<br>
+                    A year to rise higher, grow stronger & create impact like never before. ❤️<br>
+<br>
+                    #UDAAN #BeyondLimits #MumbaiSkyCity #DreamDareDo #LegacyContinues
                 </p>
             </div>
         </div>
@@ -255,6 +328,52 @@
         </div>
     </section>
     <!-- feature_part start-->
+
+    <!-- testimonial part start-->
+    <section class="testimonial-section">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-xl-8 text-center">
+                    <div class="section-badge">Testimonials</div>
+                    <h2 class="section-heading">What Members Say About RCMSKC</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="owl-carousel testimonial-carousel">
+                        <div class="testimonial-item">
+                            <!-- <img src="img/current_team/risheeta.jpg" alt="Dimple Tanwar"> -->
+                            <div class="testimonial-text">
+                                <p>Being part of the Rotaract Club of Mumbai Sky City has been a transformative journey.
+                                    The fellowship and service mindset have shaped both my personal and professional growth.</p>
+                                <h5>Dimple Tanwar</h5>
+                                <span>Charter President</span>
+                            </div>
+                        </div>
+                        <div class="testimonial-item">
+                            <!-- <img src="img/current_team/ganesh.jpg" alt="Rtr. Ganesh"> -->
+                            <div class="testimonial-text">
+                                <p>Joining this club was the best decision I ever made. The support, passion, and shared purpose
+                                    keep me motivated to serve and learn every day.</p>
+                                <h5>Rtr. Ganesh</h5>
+                                <span>Former Member</span>
+                            </div>
+                        </div>
+                        <div class="testimonial-item">
+                            <!-- <img src="img/current_team/saurav.jpg" alt="Rtr. Somnath"> -->
+                            <div class="testimonial-text">
+                                <p>Every member is welcomed like family here. Rotaract Sky City is where purpose meets passion,
+                                    and where service becomes a way of life.</p>
+                                <h5>Rtr. Somnath</h5>
+                                <span>Govt Officer at Post Office</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- testimonial part end-->
 
     <!-- top_service part start-->
     <section class="be_part">
@@ -369,11 +488,6 @@
     </section> -->
     <!--::our client part end:: -->
 
-    <!-- footer part start-->
-    <div id="footer-placeholder">
-    </div>
-    <!-- footer part end-->
-
     <!-- jquery plugins here-->
 
     <script src="js/jquery-1.12.1.min.js"></script>
@@ -392,6 +506,28 @@
     <!-- particles js -->
     <script src="js/owl.carousel.min.js"></script>
     <script src="js/jquery.nice-select.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            if ($('.testimonial-carousel').length) {
+                $('.testimonial-carousel').owlCarousel({
+                    autoplay: true,
+                    smartSpeed: 800,
+                    loop: true,
+                    margin: 30,
+                    items: 1,
+                    dots: true,
+                    nav: true,
+                    navText: ['<i class="fa fa-chevron-left"></i>', '<i class="fa fa-chevron-right"></i>'],
+                    center: true,
+                    responsive: {
+                        0: { items: 1 },
+                        768: { items: 1 },
+                        992: { items: 1 }
+                    }
+                });
+            }
+        });
+    </script>
     <!-- swiper js -->
     <script src="js/slick.min.js"></script>
     <script src="js/jquery.counterup.min.js"></script>
@@ -404,39 +540,6 @@
     <script src="js/contact.js"></script>
     <!-- custom js -->
     <script src="js/custom.js"></script>
-    <div id="footer-placeholder"></div>
-
-    <script>
-        // Note: The entire footer HTML is placed inside this multi-line string.
-        document.getElementById('footer.html/footer-area').innerHTML = footerHTML;
-
-        // document.getElementById('footer-placeholder').innerHTML = footerHTML;
-
-
-    </script>
-    <!-- <script>
-        function includeHTML() {
-            var z, i, elmnt, file, xhttp;
-            /* Loop through all elements with the attribute w3-include-html:*/
-            elmnt = document.getElementById("footer-placeholder");
-            file = "footer.html"; // The name of your footer file
-
-            /* Make an HTTP request to get the file content:*/
-            xhttp = new XMLHttpRequest();
-            xhttp.onreadystatechange = function () {
-                if (this.readyState == 4) {
-                    if (this.status == 200) { elmnt.innerHTML = this.responseText; }
-                    if (this.status == 404) { elmnt.innerHTML = "Footer not found."; }
-                    /* Remove the attribute and continue the loop:*/
-                }
-            }
-            xhttp.open("GET", file, true);
-            xhttp.send();
-        }
-
-        // Call the function when the page loads
-        document.addEventListener("DOMContentLoaded", includeHTML);
-    </script> -->
     <footer class="footer-area">
         <div class="container">
             <div class="row justify-content-between">
